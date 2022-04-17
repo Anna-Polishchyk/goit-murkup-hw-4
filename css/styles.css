@@ -122,6 +122,15 @@ h3 {
 .mail {
     margin-right: 50px;
 }
+.mail::before {
+    display: block;
+    content: "";
+    width: 16px;
+    margin-right: 10px;
+    background-color: violet;
+    background-image: url(../images/envelope.svg);
+    background-position: center;
+}
 .contacts .link {
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -138,9 +147,20 @@ h3 {
 /* Hero */
 .hero {
     background-color: hsl(235, 10%, 21%);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+        url(../images/Img-17-2.jpg);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-size: cover;
+    background-position: center;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-title {
     color: var(--background-white-color);
@@ -195,6 +215,7 @@ h3 {
     line-height: 1.1;
     text-transform: uppercase;
     margin-bottom: 0;
+    margin-top: 30px;
 }
 .description {
     color: var(--secondary-text-color);
@@ -230,6 +251,27 @@ h3 {
 }
 .item:last-child {
     margin-right: 0;
+}
+.item::before {
+    display: block;
+    content: "";
+    background-color: #F5F4FA;
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+.item-antenna::before {
+    background-image: url(../images/antenna\ 1.svg);
+}
+.item-clock::before {
+    background-image: url(../images/clock\ 1.svg);
+}
+.item-diagram::before {
+    background-image: url(../images/diagram\ 1.svg);
+}
+.item-astronaut::before {
+    background-image: url(../images/astronaut\ 1.svg);
 }
 .image {
     margin-right: 30px;
