@@ -133,8 +133,7 @@ h3 {
 
 .contact-link {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 .contact-icon {
     margin-right: 10px;
@@ -440,7 +439,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #757575;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-social-media-item:hover,
 .footer-social-media-item:focus {
